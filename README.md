@@ -1,5 +1,18 @@
 # jivass
 
-<< Please enter the title of your idea >>
-<< Please enter the description about your idea >>
-<< Please enter your team details below >> 
+Designing an E-Waste Marketplace
+
+We plan to build a facilitation environment for buyers and sellers involved in E-Waste business that includes an auction portal as well as related analytics.
+
+Team Details
+
+Aishwarya
+Abhishek
+Vijay Krishna
+Ashwin
+Gajendran
+Elaiya
+Anjana
+Naveen
+Haran
+Maniteja
