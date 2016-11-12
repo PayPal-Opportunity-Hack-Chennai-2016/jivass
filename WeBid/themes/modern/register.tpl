@@ -17,7 +17,7 @@
 				</div>
 				<div class="form-group col-lg-6 <!-- IF MISSING1 eq 1 -->has-error<!-- ENDIF -->">
 					<label for="TPL_nick">{L_003} *</label>
-					<input type="text" name="TPL_nick" class="form-control"  value="{V_UNAME}" <!-- IF MISSING1 eq 1 -->id="inputError1"<!-- ENDIF --> placeholder="{L_050}">
+					<input type="text" name="TPL_nick" class="form-control" id="username" value="{V_UNAME}" <!-- IF MISSING1 eq 1 -->id="inputError1"<!-- ENDIF --> placeholder="{L_050}">
 					<!-- IF MISSING1 eq 1 --><div class="error-box missing">{L_938}</div><!-- ENDIF -->
 				</div>
 				<div class="col-lg-12"></div>
@@ -101,6 +101,28 @@
 					<div class="timezone">
 						{TIMEZONE}
 					</div>
+				</div>
+				<script>
+					  $(document).ready(function() {
+				            $("#username").keyup(function(event) {
+				            	var ulength = $('#username').val().length;
+				            	if(ulength >  5){
+				            		var uname = $('#username').val();				               
+				                var hreftext = $('#uploadid').attr('href');
+				                var hreffull = "kyc_fill.php?username="+uname;				                
+				                $("#uploadid").attr('href',hreffull);				                
+				                event.preventDefault();
+				            	}				       
+				            });
+				        });
+				</script>
+				<div class="col-lg-12"></div>
+				<div class="form-group col-lg-12">
+					<label>KYC Upload Description</label>
+					<div class="kycupload">
+						 <a href="kyc_fill.php/?username=" target="_blank" id="uploadid" class="btn btn-primary">Upload</a>
+					</div>
+					
 				</div>
 	<!-- IF B_NLETTER -->
 				<div class="form-group col-lg-12">
