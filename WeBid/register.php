@@ -301,7 +301,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'first')
 				$TPL_email_hidden = $_POST['TPL_email'];
 				$SUSPENDED = ($system->SETTINGS['activationtype'] == 2) ? 0 : 8;
 				$SUSPENDED = ($system->SETTINGS['activationtype'] == 0) ? 10 : $SUSPENDED;
-
+				
 				$query = "SELECT value FROM " . $DBPrefix . "fees WHERE type = 'signup_fee'";
 				$db->direct_query($query);
 				$signup_fee = $db->result('value');

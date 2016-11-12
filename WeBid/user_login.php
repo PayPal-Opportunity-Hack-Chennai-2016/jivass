@@ -66,10 +66,10 @@ if (isset($_POST['action']) && isset($_POST['username']) && isset($_POST['passwo
 		{
 			$ERR = $ERR_618;
 		}
-		// elseif ($user_data['suspended'] == 8)
-		// {
-		// 	$ERR = $ERR_620;
-		// }
+		elseif ($user_data['suspended'] == 8)
+		{
+			$ERR = $ERR_620;
+		}
 		elseif ($user_data['suspended'] == 10)
 		{
 			$ERR = $ERR_621;
