@@ -183,22 +183,5 @@
 			</div>
 		</div>
 <!-- ENDIF -->
-<!-- IF B_NEWS_BOX -->
-		<div class="panel panel-default">
-			<div class="panel-heading">{L_282}</div>
-			<div class="panel-body">
-				<ul class="nav">
-	<!-- BEGIN newsbox -->
-					<span class="glyphicon glyphicon-file" aria-hidden="true" style="padding-right: 5px;"></span><a href="viewnews.php?id={newsbox.ID}">{newsbox.TITLE}</a><br>
-					<span class="text-muted"><small>{newsbox.DATE}</small></span>
-					<li class="divider"></li>
-					<br>
-	<!-- END newsbox -->
-				</ul>
-				<div class="pull-right"><a href="{SITEURL}viewallnews.php">{L_341}</a></div>
-				<br>
-			</div>
-		</div>
-<!-- ENDIF -->
 	</div>
 </div>

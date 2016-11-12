@@ -1,3 +1,10 @@
+.footer{
+	width: 100%;
+	padding-left:350px;
+	background-color:#101010;
+	height:40px;
+	position:fixed;
+}
 .grid-padding {
 	margin-bottom: 15px;
 }

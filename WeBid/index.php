@@ -150,7 +150,7 @@ while ($row = $db->fetch())
 	$i++;
 }
 
-$auc_last = ($i > 0) ? true : false;
+$auc_last = ($i > 0) ? true : true;
 // get ending soon auctions
 $query = "SELECT ends, id, title FROM " . $DBPrefix . "auctions
 			WHERE closed = 0 AND suspended = 0 AND starts <= :time
@@ -181,7 +181,7 @@ while ($row = $db->fetch())
 	$i++;
 }
 
-$end_soon = ($i > 0) ? true : false;
+$end_soon = ($i > 0) ? true : true;
 // get hot items
 $query = "SELECT a.id, a.title, a.current_bid, a.pict_url, a.ends, a.num_bids, a.minimum_bid
 		FROM " . $DBPrefix . "auctions a
