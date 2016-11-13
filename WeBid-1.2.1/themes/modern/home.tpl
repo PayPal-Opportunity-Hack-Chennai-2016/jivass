@@ -37,7 +37,7 @@
 	<div class="col-md-4 col-sm-4 col-xs-12">
 			<blockquote class="quote-box">
 			
-		      <a href="{SITEURL}item.php?id={hotitems.ID}"><img class="img-center img-circle" src="{hotitems.IMAGE}"></a>
+		      <a href="{SITEURL}item.php?id={hotitems.ID}"><img class="img-center img-circle img-responsive" src="{hotitems.IMAGE}"></a>
 		    
 		      <div class="blog-post-actions">
 		        <p class="blog-post-bottom pull-left">
@@ -58,6 +58,7 @@
 	<!-- END hotitems -->
 <!-- ENDIF -->
 		</div>
+		<br/>
 		<div class="row">
 <!-- IF B_AUC_LAST -->
 			<div class="col-md-4">
@@ -137,6 +138,7 @@
 		<div class="panel panel-primary">
 			<div class="panel-heading">{L_200} {YOURUSERNAME}</div>
 			<div class="list-group">
+				<a class="list-group-item" href="{SITEURL}order_by?location">Sort by Location</a>
 				<a class="list-group-item" href="{SITEURL}edit_data.php?">{L_244}</a>
 				<a class="list-group-item" href="{SITEURL}user_menu.php">{L_622}</a>
 				<a class="list-group-item" href="{SITEURL}logout.php"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> {L_245}</a>
