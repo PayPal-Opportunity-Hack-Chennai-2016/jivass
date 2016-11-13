@@ -60,16 +60,18 @@
 		</div>
 		<div class="row">
 <!-- IF B_AUC_LAST -->
-			<div class="col-md-6">
+			<div class="col-md-4">
 				<div class="section-header"><h2>{L_278}</h2></div>
-				<table class="table table-condensed">
+				<table class="table table-condensed table-hover">
 	<!-- BEGIN auc_last -->
-					<tr class="well">
+					<tr class="">
 						<td>
-							<p style="display:block;">
+							
 								<a href="{SITEURL}item.php?id={auc_last.ID}">{auc_last.TITLE}</a>
-								<br><span class="text-muted"><small>{auc_last.DATE}</small></span>
-							</p>
+						</td>
+						<td>
+								<span class="text-muted"><small>{auc_last.DATE}</small></span>
+							
 						</td>
 					</tr>
 	<!-- END auc_last -->
@@ -83,10 +85,11 @@
 	<!-- BEGIN end_soon -->
 					<tr class="well">
 						<td>
-							<p style="display:block;">
-								<a href="{SITEURL}item.php?id={end_soon.ID}">{end_soon.TITLE}</a>
-								<br><span class="text-muted"><small>{end_soon.DATE}</small></span>
-							</p>
+							
+								<a href="{SITEURL}item.php?id={end_soon.ID}">{end_soon.TITLE}</a>															
+						</td>
+						<td>
+							<span class="text-muted"><small>{end_soon.DATE}</small></span>
 						</td>
 					</tr>
 	<!-- END end_soon -->
