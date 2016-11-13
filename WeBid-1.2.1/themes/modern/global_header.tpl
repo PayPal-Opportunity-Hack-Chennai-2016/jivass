@@ -34,25 +34,37 @@
 {GOOGLEANALYTICS}
 <!-- ENDIF -->
 </head>
-<body>
-<div class="container">
-<div class="row">
-                <div class="col-md-6 text-muted"><small><!-- IF B_LOGGED_IN -->{L_200} {YOURUSERNAME}. <a href="{SITEURL}logout.php?">{L_245}</a><!-- ENDIF --></small></div>
-                <div class="col-md-6 text-right text-muted"><small>{HEADERCOUNTER}</small></div>
-        </div> 
+
+<body background-color="green">
+<div class="container-fluid">
+ 
 <nav class="navbar navbar-inverse navbar-static-top">
-<div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-        </button>
-</div>
+
 <!-- Collect the nav links, forms, and other content for toggling -->
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-                        <li><a href="{SITEURL}index.php?"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+        <div class="row">
+         <div class="col-md-1">
+         <ul class="nav navbar-nav navbar-left">
+                <li><a href="{SITEURL}index.php?"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+         </ul>
+         </div>
+         <div class="col-md-6">
+         <form class="" role="search" action="{SITEURL}search.php" method="get">
+         
+        <div class="col-md-10">
+                        <div class="form-group" style="margin-top: 10px">
+                                <div class="input-group">
+                                        <input type="text" class="form-control" name="q" value="{Q}" placeholder="{L_861}">
+                                        <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-primary" name="sub" value="{L_399}"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                        </span>
+                                </div>
+                        </div>
+        </div>
+                        
+        </form>
+        </div>
+        <div class="col-md-5">
+        <ul class="nav navbar-nav navbar-right">                        
 <!-- IF B_CAN_SELL -->
                         <li><a href="{SITEURL}select_category.php">{L_028}</a></li>
 <!-- ENDIF -->
@@ -67,24 +79,12 @@
                         <li><a href="{SITEURL}boards.php">{L_5030}</a></li>
 <!-- ENDIF -->
                         <li><a href="{SITEURL}help.php" alt="faqs" class="new-window">{L_148}</a></li>
-                        <li><a href="{SITEURL}adsearch.php">{L_464}</a></li>
+                        <li><a href="{SITEURL}adsearch.php">Fine Search</a></li>
         </ul>
-        <form class="navbar-form navbar-right" role="search" action="{SITEURL}search.php" method="get">
-                        <div class="form-group">
-                                        <select class="form-control" name="id">
-                                                        {SELECTION_BOX}
-                                        </select>
-                        </div>
-                        <div class="form-group">
-                                <div class="input-group">
-                                        <input type="text" class="form-control" name="q" value="{Q}" placeholder="{L_861}">
-                                        <span class="input-group-btn">
-                                        <button type="submit" class="btn btn-primary" name="sub" value="{L_399}"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                                        </span>
-                                </div>
-                        </div>
-                        
-                        
-        </form>
-</div><!-- /.navbar-collapse -->
+       </div>
+        </div>
 </nav>
+<div class="row">
+                <div class="col-md-6 text-muted"><small><!-- IF B_LOGGED_IN -->{L_200} {YOURUSERNAME}. <a href="{SITEURL}logout.php?">{L_245}</a><!-- ENDIF --></small></div>
+                <div class="col-md-6 text-right text-muted"><small>{HEADERCOUNTER}</small></div>
+        </div>

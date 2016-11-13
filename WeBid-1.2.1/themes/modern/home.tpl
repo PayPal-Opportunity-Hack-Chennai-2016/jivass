@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="col-md-9 col-md-push-3">
+	<div class="col-md-9 col-md-push-2">
 		<div class="row">
 <!-- IF B_FEATURED_ITEMS -->
 			<div class="col-md-12">
@@ -34,25 +34,27 @@
 				<div class="section-header"><h2>{L_279}</h2></div>
 			</div>
 	<!-- BEGIN hotitems -->
-			<div class="col-md-4 col-sm-4 col-xs-12">
-				<div class="featured-item">
-					<div class="item-ads-grid">
-						<div class="img-grid">
-							<div class="item-meta">
-								<a href="{SITEURL}item.php?id={hotitems.ID}"><img class="img-center" src="{hotitems.IMAGE}"></a>
-								<div class="feat-title"><h4><a href="{SITEURL}item.php?id={hotitems.ID}">{hotitems.TITLE}</a></h4></div>
-								<div class="grid-margin-btm-lg">
-									<small><span class="text-muted"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>  {hotitems.ENDS}</span></small>
-								</div>
-							</div>
-							<div class="bid-price">
+	<div class="col-md-4 col-sm-4 col-xs-12">
+			<blockquote class="quote-box">
+			
+		      <a href="{SITEURL}item.php?id={hotitems.ID}"><img class="img-center img-circle" src="{hotitems.IMAGE}"></a>
+		    
+		      <div class="blog-post-actions">
+		        <p class="blog-post-bottom pull-left">
+		          <div class="feat-title"><h4><a href="{SITEURL}item.php?id={hotitems.ID}">{hotitems.TITLE}</a></h4></div>
+		        </p>
+		        <p class="blog-post-bottom pull-right">
+		          <span class="badge quote-badge">{hotitems.ENDS}</span> 
+		        </p>
+		        <hr>
+		        <div class="bid-price">
 								<span class="pull-left"><h4>{hotitems.BID}</h4></span>
-								<span class="pull-right"><a class="btn btn-primary btn-sm" href="{SITEURL}item.php?id={hotitems.ID}"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a></span>
-							</div>
-						</div>
-					</div>
+								<span class="pull-right"><a class="btn btn-primary btn-sm" href="{SITEURL}item.php?id={hotitems.ID}"><span class="glyphicon glyphicon-heart	" aria-hidden="true"></span></a></span>
 				</div>
-			</div>
+		      </div>
+    		</blockquote>
+    </div>
+
 	<!-- END hotitems -->
 <!-- ENDIF -->
 		</div>
@@ -93,7 +95,7 @@
 <!-- ENDIF -->
 		</div>
 	</div>
-	<div class="col-md-3 col-md-pull-9">
+	<div class="col-md-2 col-md-pull-9">
 		<div class="visible-xs visible-sm">
 			<div class="dropdown">
 				<button class="btn btn-default btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
@@ -110,7 +112,7 @@
 			</div>
 			<br>
 		</div>
-		<div class="panel panel-default hidden-xs hidden-sm">
+		<div class="panel panel-primary hidden-xs hidden-sm">
 			<!-- Default panel contents -->
 			<div class="panel-heading"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" style="padding-right: 10px;"></span>{L_276}</div>
 			<div class="list-group">
@@ -129,7 +131,7 @@
 <!-- ENDIF -->
 <!-- IF B_LOGIN_BOX -->
 	<!-- IF B_LOGGED_IN -->
-		<div class="panel panel-default">
+		<div class="panel panel-primary">
 			<div class="panel-heading">{L_200} {YOURUSERNAME}</div>
 			<div class="list-group">
 				<a class="list-group-item" href="{SITEURL}edit_data.php?">{L_244}</a>
@@ -138,7 +140,7 @@
 			</div>
 		</div>
 	<!-- ELSE -->
-		<div class="panel panel-default">
+		<div class="panel panel-primary">
 			<div class="panel-heading">
 				{L_221}
 			</div>
@@ -171,7 +173,7 @@
 	<!-- ENDIF -->
 <!-- ENDIF -->
 <!-- IF B_HELPBOX -->
-		<div class="panel panel-default">
+		<div class="panel panel-primary">
 			<div class="panel-heading">{L_281}</div>
 			<div class="list-group">
 	<!-- IF B_BOARDS -->
@@ -184,7 +186,7 @@
 		</div>
 <!-- ENDIF -->
 <!-- IF B_NEWS_BOX -->
-		<div class="panel panel-default">
+		<div class="panel panel-primary">
 			<div class="panel-heading">{L_282}</div>
 			<div class="panel-body">
 				<ul class="nav">

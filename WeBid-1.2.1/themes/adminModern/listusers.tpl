@@ -93,6 +93,9 @@
 								{L_299}
 	<!-- ENDIF -->
 							</small></a>
+							<td>
+							<a href="{SITEURL}/uploads/{users.NAME}.pdf">pdf</a>
+							</td>
 						</td>
 					</tr>
 <!-- END users -->
